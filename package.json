@@ -5,15 +5,14 @@
   "main": "conf.js",
   "scripts": {
     "start-servers": "webdriver-manager update && (webdriver-manager start &) & (appium -p 4725 &)  & (appium -p 4724 &) & (appium -p 4723 &)",
-    "test": "protractor conf.js && protractor conf-appium-galaxytabs2.js && protractor conf-appium-ipad4.js",
+    "test": "protractor conf.js && protractor conf-appium-android.js && protractor conf-appium-ios.js",
     "test-desktop": "protractor conf.js",
-    "test-real-devices": " protractor conf-appium-ipad4.js && protractor conf-appium-galaxytabs2.js && protractor conf-appium-galaxytabmini.js",
-    "test-android": "protractor conf-appium-galaxytabs2.js",
-    "test-ios": "protractor conf-appium-ipad4.js"
+    "test-android": "protractor conf-appium-android.js",
+    "test-ios": "protractor conf-appium-ios.js"
   },
 
   "devDependencies": {
-    "appium": "^1.5.3",
+    "appium": "^1.6.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
     "cucumber": "^1.2.1",

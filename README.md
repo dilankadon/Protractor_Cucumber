@@ -5,7 +5,6 @@ This repository contains code for first steps on protractor [http://www.protract
 
 ## Setup
 
-0. Install nodejs `brew install node`
 1. Install modules `npm install`
 3. Run all servers `npm run start-servers`
 
@@ -13,9 +12,9 @@ This repository contains code for first steps on protractor [http://www.protract
 
 The desktop browser configuration file is [conf.js](conf.js)
 
-The android devices configuration file are [conf-appium-galaxytabmini.js](conf-appium-galaxytabmini.js), [conf-appium-galaxytabs2.js](conf-appium-galaxytabs2.js)
+The android devices configuration file are [conf-appium-android.js](conf-appium-galaxytabmini.js)
 
-The ios devices configuration file is [conf-appium-ipad4.js](conf-appium-ipad4.js)
+The ios devices configuration file is [conf-appium-ios.js](conf-appium-ios.js)
 
 
 ## Tests
@@ -31,11 +30,9 @@ Run all the test with: `npm test`
 
 Run only test on desktop browsers: `npm run test-desktop`
 
-Run only test on real devices: `npm run test-real-devices`
+Run only test on android devices: `npm run test-android`
 
-Run only test on real android devices: `npm run test-android`
-
-Run only test on real ios devices: `npm run test-ios`
+Run only test on ios devices: `npm run test-ios`
 
 The test can be tagged as:
 
