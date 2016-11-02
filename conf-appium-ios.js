@@ -20,10 +20,12 @@ exports.config = {
         bundleId:'SafariLauncher',
         'appium-version': '1.6.0',
         platformName: 'iOS',
-        platformVersion: '10.1',
-        deviceName: 'iPhone 7',
+        //platformVersion: '10.1',
+        //deviceName: 'iPhone 7',
+        platformVersion: '9.3',
+        deviceName: 'iPhone 6s',
+        automationName: 'XCUITest'
         //'udid': 'XXX'
-
     }
 };
 
